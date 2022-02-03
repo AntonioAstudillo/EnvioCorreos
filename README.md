@@ -4,7 +4,7 @@ Pequeño Programa para enviar correos por medio de la clase PHPMailer.
 Para poder enviar correos por medio de XAMP, es necesario configurar
 el archivo php.ini, especificamente el apartado que dice [mail function], en dicho apartado
 es necesario cambiar el valor SMTP=localhost,por  SMTP =  smtp.gmail.com al igual que
-smtp_port = 25  por  smtp_port = 587  y descomentar la linea que dice sendmail_from = me@example.com y cambiar el valor por defecto, por algun correo destino. Otra cosa importante a configurar en dicho archivo, es el sendmail_path = , para que funcione, tienen que descomentar
+smtp_port = 25  por  smtp_port = 587  y descomentar la linea que dice sendmail_from = me@example.com y cambiar el valor por defecto, por algun correo origen. Otra cosa importante a configurar en dicho archivo, es el sendmail_path = , para que funcione, tienen que descomentar
 esa linea, y como valor, ponerle la ruta en la que se encuentra el ejecutable sendmail.exe. que xamp lo tiene en la siguiente ruta "\"C:\xampp\sendmail\sendmail.exe\" -t". Algo importante de mencionar,
 es que antes de que comiencen a realizar modificaciones sobre el archivo php.ini, es importante realizar
 una copia de él, por si por algun motivo, sucede algun problema, ya tendrían un respaldo
