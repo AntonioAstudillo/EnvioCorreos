@@ -34,7 +34,7 @@ class Correo
          $objetoMail->SMTPSecure = 'tls';
          $objetoMail->Port = 587;
 
-         //En la funcion setFrom, ponemos como primer parametro, el correo destino el segundo parametro, ponemos el nombre del remitente.
+         //En la funcion setFrom, ponemos como primer parametro, el correo origen el segundo parametro, ponemos el nombre del remitente.
          $objetoMail->setFrom('', 'Antonio');
          $objetoMail->isHTML(true);
          $objetoMail->Subject = 'Correo de prueba';
