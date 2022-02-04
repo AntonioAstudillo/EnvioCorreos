@@ -22,7 +22,7 @@ if(isset($_POST['correo'] , $_POST['asunto'] , $_POST['nombre']))
    }
 
 }else{
-   header("Location:index.php");
+  echo 'bad';
 }
 
 
