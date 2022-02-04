@@ -1,23 +1,24 @@
 <?php
 
-
-if(isset($_POST['correo']) && isset($_POST['asunto']) && isset($_POST['nombre']))
+if(isset($_POST['correo'] , $_POST['asunto'] , $_POST['nombre']))
 {
+   require_once '../modelos/correo.php';
+
    $nombre = $_POST['nombre'];
    $correo = $_POST['correo'];
    $asunto = $_POST['asunto'];
 
    //instanciamos un objeto de la clase Correo.php
-   require_once 'correo.php';
+   require_once '../modelos/correo.php';
 
    $objeto = new Correo($nombre , $correo , $asunto);
 
    $respuesta = $objeto->enviarCorreo();
 
    if($respuesta){
-      echo 'Correo enviado con éxito';
+      echo 'good';
    }else{
-      echo 'Hubo un problema al enviar el correo';
+      echo 'bad';
    }
 
 }else{
