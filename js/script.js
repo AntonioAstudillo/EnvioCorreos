@@ -61,7 +61,7 @@ function enviarDatos(e)
 }
 
 function ocultarSpinner(){
-   //ocultamos boton y mostramos spinner
+   //ocultamos spinner y mostramos boton
    $('#btnEnviar').show();
    $('#spinner').hide();
 }
